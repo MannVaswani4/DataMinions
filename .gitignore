@@ -30,6 +30,7 @@ ENV/
 env.bak/
 venv.bak/
 .venv/
+vemv/
 
 # IDEs
 .vscode/
@@ -40,13 +41,16 @@ venv.bak/
 .DS_Store
 
 # Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+
+# Keep .env.example for reference
+!.env.example
 
 # Data files (large datasets)
 data/
@@ -77,6 +81,13 @@ Thumbs.db
 # Archive (old script files)
 archive/
 
+# Helper scripts (temporary)
+create_remaining_notebooks.py
+fix_notebooks.py
+
+# VS Code workspace
+*.code-workspace
+
 # API Keys (if stored separately)
 api_keys.txt
 secrets.txt
@@ -93,3 +104,4 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+simplify_notebooks.py

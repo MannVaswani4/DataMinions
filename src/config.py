@@ -5,7 +5,12 @@ All configuration parameters for the DataMinions project.
 Centralized configuration makes it easy to modify settings.
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ============================================================================
 # PROJECT STRUCTURE
@@ -29,7 +34,7 @@ for directory in [DATA_DIR, CLEANED_DIR, LOGS_DIR, REPORTS_DIR, DB_DIR, VISUALIZ
 # ============================================================================
 
 # OpenAQ API Configuration (v3)
-OPENAQ_API_KEY = "228bdabf46a3ba410581da7e170440a3545b336a4d772493ad53a4407a4d8de1"
+OPENAQ_API_KEY = os.getenv('OPENAQ_API_KEY')
 OPENAQ_BASE_URL = "https://api.openaq.org/v3"
 
 # OpenAQ Parameter IDs (v3 API)
