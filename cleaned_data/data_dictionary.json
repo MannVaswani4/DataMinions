@@ -1,0 +1,352 @@
+{
+  "dataset_name": "analysis_ready",
+  "description": "Merged and cleaned OpenAQ + World Bank data for air quality analysis",
+  "generated_date": "2025-11-07 12:21:25",
+  "total_rows": 946,
+  "total_columns": 33,
+  "columns": [
+    {
+      "name": "country_code",
+      "data_type": "object",
+      "non_null_count": 946,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    {
+      "name": "mean_value_CO",
+      "data_type": "float64",
+      "non_null_count": 210,
+      "null_count": 736,
+      "null_percentage": 77.80126849894292,
+      "min": 0.11,
+      "max": 1.2054466302589664,
+      "mean": 0.5760175699796617,
+      "median": 0.4218390804597701
+    },
+    {
+      "name": "mean_value_NO2",
+      "data_type": "float64",
+      "non_null_count": 224,
+      "null_count": 722,
+      "null_percentage": 76.32135306553911,
+      "min": 0.001,
+      "max": 37.673197673095714,
+      "mean": 2.3883783629433677,
+      "median": 0.015229127302303752
+    },
+    {
+      "name": "mean_value_O3",
+      "data_type": "float64",
+      "non_null_count": 277,
+      "null_count": 669,
+      "null_percentage": 70.71881606765328,
+      "min": 0.004,
+      "max": 0.04604732824427481,
+      "mean": 0.01706038113938342,
+      "median": 0.016995555555555555
+    },
+    {
+      "name": "mean_value_PM10",
+      "data_type": "float64",
+      "non_null_count": 641,
+      "null_count": 305,
+      "null_percentage": 32.241014799154335,
+      "min": 2.9,
+      "max": 187.55382349161908,
+      "mean": 30.675458256976075,
+      "median": 18.427146256929134
+    },
+    {
+      "name": "mean_value_PM25",
+      "data_type": "float64",
+      "non_null_count": 722,
+      "null_count": 224,
+      "null_percentage": 23.678646934460886,
+      "min": 1.4770949999999998,
+      "max": 136.0,
+      "mean": 26.992119041504065,
+      "median": 17.37072575
+    },
+    {
+      "name": "measurement_count_CO",
+      "data_type": "float64",
+      "non_null_count": 210,
+      "null_count": 736,
+      "null_percentage": 77.80126849894292,
+      "min": 1.0,
+      "max": 523.0,
+      "mean": 100.4,
+      "median": 34.0
+    },
+    {
+      "name": "measurement_count_NO2",
+      "data_type": "float64",
+      "non_null_count": 224,
+      "null_count": 722,
+      "null_percentage": 76.32135306553911,
+      "min": 1.0,
+      "max": 866.0,
+      "mean": 183.9375,
+      "median": 118.0
+    },
+    {
+      "name": "measurement_count_O3",
+      "data_type": "float64",
+      "non_null_count": 277,
+      "null_count": 669,
+      "null_percentage": 70.71881606765328,
+      "min": 1.0,
+      "max": 1294.0,
+      "mean": 131.9025270758123,
+      "median": 7.0
+    },
+    {
+      "name": "measurement_count_PM10",
+      "data_type": "float64",
+      "non_null_count": 641,
+      "null_count": 305,
+      "null_percentage": 32.241014799154335,
+      "min": 1.0,
+      "max": 881.0,
+      "mean": 69.08736349453979,
+      "median": 16.0
+    },
+    {
+      "name": "measurement_count_PM25",
+      "data_type": "float64",
+      "non_null_count": 722,
+      "null_count": 224,
+      "null_percentage": 23.678646934460886,
+      "min": 1.0,
+      "max": 462.0,
+      "mean": 31.911357340720222,
+      "median": 4.0
+    },
+    {
+      "name": "median_value_CO",
+      "data_type": "float64",
+      "non_null_count": 210,
+      "null_count": 736,
+      "null_percentage": 77.80126849894292,
+      "min": 0.1,
+      "max": 0.8672617499999999,
+      "mean": 0.40895785934271583,
+      "median": 0.39
+    },
+    {
+      "name": "median_value_NO2",
+      "data_type": "float64",
+      "non_null_count": 224,
+      "null_count": 722,
+      "null_percentage": 76.32135306553911,
+      "min": 0.001,
+      "max": 38.65397251572,
+      "mean": 2.425671951364445,
+      "median": 0.010655
+    },
+    {
+      "name": "median_value_O3",
+      "data_type": "float64",
+      "non_null_count": 277,
+      "null_count": 669,
+      "null_percentage": 70.71881606765328,
+      "min": 0.004,
+      "max": 0.04955,
+      "mean": 0.016044865862815883,
+      "median": 0.01325
+    },
+    {
+      "name": "median_value_PM10",
+      "data_type": "float64",
+      "non_null_count": 641,
+      "null_count": 305,
+      "null_percentage": 32.241014799154335,
+      "min": 2.9,
+      "max": 150.89,
+      "mean": 25.900268626193448,
+      "median": 16.0
+    },
+    {
+      "name": "median_value_PM25",
+      "data_type": "float64",
+      "non_null_count": 722,
+      "null_count": 224,
+      "null_percentage": 23.678646934460886,
+      "min": 1.4770949999999998,
+      "max": 136.0,
+      "mean": 25.25569208329017,
+      "median": 16.3935
+    },
+    {
+      "name": "num_locations_CO",
+      "data_type": "float64",
+      "non_null_count": 210,
+      "null_count": 736,
+      "null_percentage": 77.80126849894292,
+      "min": 1.0,
+      "max": 523.0,
+      "mean": 99.6,
+      "median": 34.0
+    },
+    {
+      "name": "num_locations_NO2",
+      "data_type": "float64",
+      "non_null_count": 224,
+      "null_count": 722,
+      "null_percentage": 76.32135306553911,
+      "min": 1.0,
+      "max": 866.0,
+      "mean": 183.125,
+      "median": 118.0
+    },
+    {
+      "name": "num_locations_O3",
+      "data_type": "float64",
+      "non_null_count": 277,
+      "null_count": 669,
+      "null_percentage": 70.71881606765328,
+      "min": 1.0,
+      "max": 1280.0,
+      "mean": 131.19494584837545,
+      "median": 7.0
+    },
+    {
+      "name": "num_locations_PM10",
+      "data_type": "float64",
+      "non_null_count": 641,
+      "null_count": 305,
+      "null_percentage": 32.241014799154335,
+      "min": 1.0,
+      "max": 881.0,
+      "mean": 66.57566302652106,
+      "median": 16.0
+    },
+    {
+      "name": "num_locations_PM25",
+      "data_type": "float64",
+      "non_null_count": 722,
+      "null_count": 224,
+      "null_percentage": 23.678646934460886,
+      "min": 1.0,
+      "max": 462.0,
+      "mean": 31.019390581717452,
+      "median": 4.0
+    },
+    {
+      "name": "year",
+      "data_type": "float64",
+      "non_null_count": 946,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "min": 2010.0,
+      "max": 2023.0,
+      "mean": 2016.4651162790697,
+      "median": 2016.0
+    },
+    {
+      "name": "pm25_exposure",
+      "data_type": "float64",
+      "non_null_count": 726,
+      "null_count": 220,
+      "null_percentage": 23.25581395348837,
+      "min": 4.89518090216668,
+      "max": 79.0373957134889,
+      "mean": 21.629026026066168,
+      "median": 18.82146536049395
+    },
+    {
+      "name": "gdp_per_capita",
+      "data_type": "float64",
+      "non_null_count": 923,
+      "null_count": 23,
+      "null_percentage": 2.431289640591966,
+      "min": 330.619412798644,
+      "max": 134965.815442152,
+      "mean": 24733.558657596714,
+      "median": 14211.460557822
+    },
+    {
+      "name": "urban_population_pct",
+      "data_type": "float64",
+      "non_null_count": 924,
+      "null_count": 22,
+      "null_percentage": 2.3255813953488373,
+      "min": 17.319,
+      "max": 100.0,
+      "mean": 67.71451515151514,
+      "median": 73.62100000000001
+    },
+    {
+      "name": "income_category",
+      "data_type": "category",
+      "non_null_count": 923,
+      "null_count": 23,
+      "null_percentage": 2.431289640591966
+    },
+    {
+      "name": "urbanization_level",
+      "data_type": "category",
+      "non_null_count": 924,
+      "null_count": 22,
+      "null_percentage": 2.3255813953488373
+    },
+    {
+      "name": "country",
+      "data_type": "object",
+      "non_null_count": 946,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    {
+      "name": "pm25_per_gdp",
+      "data_type": "float64",
+      "non_null_count": 699,
+      "null_count": 247,
+      "null_percentage": 26.109936575052856,
+      "min": 0.03149946187111565,
+      "max": 381.4907272922351,
+      "mean": 13.319069695708826,
+      "median": 1.3987266575805914
+    },
+    {
+      "name": "urban_pollution_index",
+      "data_type": "float64",
+      "non_null_count": 700,
+      "null_count": 246,
+      "null_percentage": 26.004228329809724,
+      "min": 1.00390761675,
+      "max": 81.52502,
+      "mean": 14.853902424634631,
+      "median": 9.907035
+    },
+    {
+      "name": "aqi_category_pm25",
+      "data_type": "category",
+      "non_null_count": 722,
+      "null_count": 224,
+      "null_percentage": 23.678646934460886
+    },
+    {
+      "name": "data_completeness_pct",
+      "data_type": "float64",
+      "non_null_count": 946,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "min": 26.923076923076927,
+      "max": 100.0,
+      "mean": 53.724182793950234,
+      "median": 53.84615384615385
+    },
+    {
+      "name": "composite_pollution_index",
+      "data_type": "float64",
+      "non_null_count": 946,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "min": 1.5462228100775495,
+      "max": 100.0,
+      "mean": 21.794652944891922,
+      "median": 15.678785670359598
+    }
+  ]
+}
