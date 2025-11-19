@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "cleaned_data",
+			"path": "../test-datamini/cleaned_data"
+		},
+		{
+			"name": "DataMinions",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
