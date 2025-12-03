@@ -88,29 +88,6 @@ Results will be documented with:
 
 ---
 
-## Project Structure
-project/
-│── data/
-│ ├── raw/
-│ ├── processed/
-│
-│── notebooks/
-│ ├── 01_data_fetch.ipynb
-│ ├── 02_cleaning.ipynb
-│ ├── 03_eda_visualization.ipynb
-│ ├── 04_modeling.ipynb
-│
-│── src/
-│ ├── data_fetch.py
-│ ├── preprocess.py
-│ ├── visualize.py
-│
-│── README.md
-│── requirements.txt
-
-
----
-
 ## Contributors & Work Allocation (for scoring)
 | Name | Role | Responsibility |
 |------|------|----------------|
