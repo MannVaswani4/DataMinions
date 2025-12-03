@@ -21,3 +21,43 @@ ax.set_ylabel(pollutant)
 ax.set_xticklabels(country_avg.index, rotation=45)
 
 st.pyplot(fig)
+
+st.markdown("""
+### Key Insight:
+- **PM2.5/PM10:** Low-income countries dominate (Afghanistan, India)
+- **Different pollutants = Different top countries**
+
+### Top 5 Countries by Pollutant:
+
+**PM2.5 (µg/m³):**
+| Rank | Country | Value |
+|------|---------|-------|
+| 1 | Afghanistan | 136.00 |
+| 2 | Mongolia | 118.00 |
+| 3 | India | 100.70 |
+| 4 | Bosnia and Herzegovina | 85.00 |
+| 5 | Bangladesh | 84.00 |
+
+**PM10 (µg/m³):**
+| Rank | Country | Value |
+|------|---------|-------|
+| 1 | India | 187.55 |
+| 2 | Mongolia | 171.39 |
+| 3 | Mexico | 65.14 |
+| 4 | Bosnia and Herzegovina | 64.90 |
+| 5 | Peru | 63.35 |
+
+**NO2 (ppm):**
+| Rank | Country | Value |
+|------|---------|-------|
+| 1 | Ecuador | 37.67 |
+| 2 | Australia | 0.36 |
+| 3 | Mexico | 0.02 |
+
+**O3 (ppm):**
+| Rank | Country | Value |
+|------|---------|-------|
+| 1 | Republic of Korea | 0.05 |
+| 2 | South Africa | 0.03 |
+| 3 | United States | 0.03 |
+""")
