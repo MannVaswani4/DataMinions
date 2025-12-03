@@ -5,11 +5,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
+import joblib
+import os
 
 # ----------------------------------------
 # 1. Load Data
 # ----------------------------------------
-df = pd.read_csv("/content/analysis_ready.csv")
+# Use absolute path or relative path from project root
+data_path = os.path.join(os.path.dirname(__file__), "../cleaned_data/analysis_ready.csv")
+df = pd.read_csv(data_path)
 print("Initial Shape:", df.shape)
 
 # ----------------------------------------
@@ -97,9 +101,19 @@ for col in categorical_cols:
 # ----------------------------------------
 # 9. Label Encode Categorical Features
 # ----------------------------------------
+model_dir = os.path.join(os.path.dirname(__file__), "../models")
+os.makedirs(model_dir, exist_ok=True)
+
+encoders = {}
 for col in categorical_cols:
     le = LabelEncoder()
     df[col] = le.fit_transform(df[col])
+    encoders[col] = le
+
+# Save Encoders
+encoders_path = os.path.join(model_dir, "encoders.pkl")
+joblib.dump(encoders, encoders_path)
+print(f"Encoders saved to {encoders_path}")
 
 # ----------------------------------------
 # 10. Define Feature Set
@@ -144,7 +158,16 @@ print(f"RMSE: {rmse:.4f}")
 print(f"MAE: {mae:.4f}")
 
 # ----------------------------------------
-# 14. Feature Importance Plot
+# 14. Save Model
+# ----------------------------------------
+model_dir = os.path.join(os.path.dirname(__file__), "../models")
+os.makedirs(model_dir, exist_ok=True)
+model_path = os.path.join(model_dir, "rf_model.pkl")
+joblib.dump(model, model_path)
+print(f"Model saved to {model_path}")
+
+# ----------------------------------------
+# 15. Feature Importance Plot
 # ----------------------------------------
 importances = model.feature_importances_
 indices = np.argsort(importances)[::-1]
@@ -154,4 +177,4 @@ plt.title("Feature Importance", fontsize=15)
 plt.bar(range(len(importances)), importances[indices])
 plt.xticks(range(len(importances)), X.columns[indices], rotation=90)
 plt.tight_layout()
-plt.show()
+# plt.show() # Commented out to avoid blocking execution in non-interactive environments
