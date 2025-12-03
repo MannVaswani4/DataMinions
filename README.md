@@ -88,15 +88,4 @@ Results will be documented with:
 
 ---
 
-## Contributors & Work Allocation (for scoring)
-| Name | Role | Responsibility |
-|------|------|----------------|
-| Member 1 | Data Engineering Lead | Data Downloading + Preprocessing |
-| Member 2 | Visualization + Dashboarding | Interactive Charts & EDA |
-| Member 3 | Modeling + Analysis | Statistical Tests + Prediction |
-| Member 4 | Documentation + Report Lead | Final Report + Presentation |
-
-Leadership rotates every phase.
-
----
 
